@@ -67,8 +67,8 @@ Exercise 4
 
 Solve Exercise 4 here:
 */
-
-game.party.push(pokemon[24]);
+const myStarterPokemonNum = 24
+game.party.push(pokemon[myStarterPokemonNum]);
 console.log(game);
 ///////////////////////////
 // ! exercise 5
@@ -185,9 +185,9 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 Solve Exercise 8 here:
 */
 game.party.map((item) => {
-  if (item.number === 25) {
+  if (item.number === myStarterPokemonNum + 1) {
     game.party.pop();
-    game.party.push(pokemon[25]);
+    game.party.push(pokemon[myStarterPokemonNum + 1]);
   }
 });
 // currenty my issue is the sorted pokemon are still going by hp
